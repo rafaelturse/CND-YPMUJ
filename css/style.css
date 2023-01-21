@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+:root {
+    --color-black: #1E1E1E;
+    --color-blue: #0C70F2;
+    --color-dark-white: #CDCDCD;
+    --color-gray: #616161;
+    --color-white: #FFF;
+    --color-light-dark: #1E1E1E;
+    
+    --font-helvetica-ss: 'Helvetica', sans-serif;
+
+    --font-weight-7: 700;
+}
+
+/* BUTTON */
+button {
+    cursor: pointer;
+    background-color: var(--color-blue) !important;
+    color: var(--color-white) !important;
+    border: none;
+    border-radius: 0.3rem;
+    font-size: 18px;
+    height: 50px;
+    width: 92%;
+    transition: 250ms
+}
+
+button:focus,
+button:hover { color: var(--color-dark-white) !important; }
+
+/* FONT */
+.fs-20 { font-size: 20px; }
+.fs-30 { font-size: 30px; }
+
+.fw-bold-7 { font-weight: var(--font-weight-7) !important; }
+
+/* GENERAL */
+.btn-required { font-size: 12px; }
+.required { font-size: 12px; }
+
+body { 
+    background-color: var(--color-light-dark) !important; 
+    color: var(--color-white) !important; 
+    font-family: var(--font-helvetica-ss) !important; 
+}
+
+.container-form {
+    width: 30%;
+    margin: 0 auto;
+}
+
+/* GROUP */
+.field-label { margin-left: 22px; }
+.message-position { margin-right: 30px; }
+.message-btn-position { margin-left: 30px; }
+
+.input-group { margin-top: 30px; }
+
+input {
+    border: none;
+    background-color: var(--color-white) !important;
+    border-radius: 0.3rem;
+    height: 30px;
+    width: 90%;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button { -webkit-appearance: none; }
+
+input:focus,
+button:focus {
+    outline: none;
+    border: none;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    transform: translateY(-105%) translateX(-10%) scale(1.2);
+    padding: 0 0.2rem;
+    color: var(--color-white);
+}
+
+/* MARGIN */
+.m-5 { margin: 20px; }
+.mt-2 { margin-top: 5px; }
+.mt-3 { margin-top: 10px; }
+.mt-5 { margin-top: 30px; }
+
+/* MENU */
+.top-menu { padding: 2rem 0 0 1.7rem; }
+
+/* TEXT */
+.text-center { text-align: center; }
+.text-start { text-align: left; }
+.text-end { text-align: right; }

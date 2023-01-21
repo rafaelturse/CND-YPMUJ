@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>DNC - Jumpy</title>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="./css/style.css" />
+    </head>
+
+    <body>
+        <section id="top-menu">
+            <div class="top-menu"><img src="./img/dnc.svg" alt="top-menu-main-dnc-logo" /></div>
+        </section>
+
+        <section id="login-menu">
+            <div class="text-center"><img src="./img/jumpy.svg" alt="main-banner-jumpy" /></div>
+            <div class="text-center fs-30 fw-bold-7 m-5"><span>Bem vindo ao Jumpy!</span></div>
+        </section>
+
+        <section id="login-fields" class="text-center">
+            <div class="container-form">
+                <form id="form-register">
+                    <div class="input-group">
+                        <div class="text-start"><span class="field-label">Nome:</span></div>
+                        <div><input id="field-name" type="text" name="field-name" placeholder="Nome completo" required autocomplete="off" /></div>
+                        <div class="text-end message-position mt-2"><span id="message-name" class="required"></span></div>
+                    </div>
+                    <div class="input-group">
+                        <div class="text-start"><span class="field-label">Email:</span></div>
+                        <div><input id="field-email" type="text" name="field-email" placeholder="Email@email.com" required autocomplete="off" /></div>
+                        <div class="text-end message-position mt-2"><span id="message-email" class="required"></span></div>
+                    </div>
+                    <div class="input-group">
+                        <div class="text-start"><span class="field-label">Telefone:</span></div>
+                        <div><input id="field-telephone" type="text" name="field-telephone" placeholder="(24) 991513-4965" required autocomplete="off" /></div>
+                        <div class="text-end message-position mt-2"><span id="message-telephone" class="required"></span></div>
+                    </div>
+                    <div class="input-group">
+                        <div class="text-start"><span class="field-label">CPF:</span></div>
+                        <div><input id="field-cpf" type="text" name="field-cpf" placeholder="452.849.235-890" required autocomplete="off" /></div>
+                        <div class="text-end message-position mt-2"><span id="message-cpf" class="required"></span></div>
+                    </div>
+                    <div class="input-group">
+                        <div class="text-start"><span class="field-label">Senha:</span></div>
+                        <div><input id="field-password" type="password" name="field-password" placeholder="************" required autocomplete="off" /></div>
+                        <div class="text-end message-position mt-2"><span id="message-password" class="required"></span></div>
+                    </div>
+
+                    <div>
+                        <div><button id="btn-submit" class="btn-submit fw-bold-7 mt-5">Cadastrar</button><br /></div>
+                        <div class="text-start message-btn-position mt-3"><span id="message-button" class="btn-required"></span></div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- JS -->
+        <script src="./js/general.js"></script>
+    </body>
+</html>
